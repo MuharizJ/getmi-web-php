@@ -1,12 +1,11 @@
 <?php
 
-session_start();
 $regDebug = false;
 
 if ($regDebug)
     echo "its rider_reg_submit.php start...<br />";
 
-require_once(dirname(__FILE__) . '../controller/db.php');
+require_once('../controller/db.php');
 
 // MJ: Set session variables to be used on profile.php page
 $_SESSION['email'] = $_POST['email'];
@@ -28,7 +27,7 @@ $address_state = 'Victoria';
 $address_postcode = '3030';
 
 //MJ: Check if user with that email already exists
-$result = $mysqli->query("SELECT * FROM users WHERE email='$email'") or die($mysqli->error());
+$result = $mysqli->query("SELECT * FROM users WHERE email='$email'") or die($mysqli->error);
 
 //MJ: We know user email exists if the rows returned are more than 0
 if ($result->num_rows > 0) {

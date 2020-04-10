@@ -20,6 +20,7 @@ session_start();
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
+
     if (isset($_POST['register'])) { //user logging in
 
         require 'rider_reg_submit.php';
@@ -34,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 <!-- MultiStep Form -->
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
-        <form id="msform">
+        <form id="msform" action="rider_reg_1.php" method="post" >
             <!-- progressbar -->
             <ul id="progressbar">
                 <li class="active">Personal Details</li>
@@ -80,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
                 <input type="password" placeholder="Enter password" id="password" name="password">
 
                 <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-                <input type="submit" name="register" class="submit action-button" value="Submit & Create Account"/>
+                <button type="submit" name="register" class="submit action-button">Submit</button>
                 
                 <!-- Ford input elements that store consent and checkbox based preferences from the above 'label-checkbox' group -->
                 <input class="checkbox-checkbox" type="checkbox" id="consent-idcheck" style="display:none;"/>
