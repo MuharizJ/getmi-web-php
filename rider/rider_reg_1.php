@@ -1,6 +1,6 @@
 <?php
 
-require_once(dirname(__FILE__) . '/controller/db.php');
+require_once('../controller/db.php');
 session_start();
 ?>
 
