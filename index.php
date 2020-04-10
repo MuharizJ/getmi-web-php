@@ -76,11 +76,13 @@
             <article id="riders">
                 <h2 class="major">For Riders</h2>
                 <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-                <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at
-                    eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-                    lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada
-                    fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum
-                    dolor sit amet.</p>
+                <p>Become part of the GetMi family and make money on the go.</p>
+                <p>Deliver by car, motorbike, scooter, or even bicycle. You choose the way you want to deliver.</p>
+                <p>Why deliver food when you can deliver the gold? Well not exactly gold, but you get the drift.</p>
+                <ul class="icons">
+                    <button onclick="window.location.href = 'https://getmi.herokuapp.com/rider/rider_reg_1.html';">Sign Up</button>
+                    <button onclick="window.location.href = 'https://getmi.herokuapp.com/rider/login.html';">Login</button>    
+                </ul>
             </article>
 
             <!-- Contact -->
