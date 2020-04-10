@@ -79,8 +79,8 @@
                 <p>Become part of the GetMi family and make money on the go. Why deliver just food when you can deliver pure gold?</p>
                 <p>Deliver by car, motorbike, scooter, or even bicycle. You choose the way you want to deliver.</p>
                 <ul class="icons">
-                    <li><button class="primary" onclick="window.location.href = 'https://getmi.herokuapp.com/rider/rider_reg_1.html';">Sign Up</button></li>
-                    <li><button onclick="window.location.href = 'https://getmi.herokuapp.com/rider/login.html';">Login</button></li>
+                    <li><button class="primary" onclick="window.location.href = 'https://getmi.herokuapp.com/rider/rider_reg_1.php';">Sign Up</button></li>
+                    <li><button onclick="window.location.href = 'https://getmi.herokuapp.com/rider/rider_login.html';">Login</button></li>
                 </ul>
             </article>
 
