@@ -9,6 +9,23 @@ $(document).ready(function(){
         $("#licensefile").trigger('click');
     });
 
+    $(".label-checkbox").click(function(){
+
+        let idOfLabel = event.target.id;
+        let idOfCheckbox = idOfLabel.replace("label-", "");
+
+        if($("#" + idOfCheckbox).prop("checked") == true) {
+            $("#" + idOfCheckbox).prop("checked", false);
+            $("#" + idOfLabel).removeClass("label-checkbox-checked");
+            $("#" + idOfLabel).addClass("label-checkbox");
+        }
+        else {
+            $("#" + idOfCheckbox).prop("checked", true);
+            $("#" + idOfLabel).removeClass("label-checkbox");
+            $("#" + idOfLabel).addClass("label-checkbox-checked");
+        }
+    });
+
     $(".next").click(function(){
         if(animating) return false;
         animating = true;

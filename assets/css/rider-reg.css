@@ -57,6 +57,34 @@ body {
     font-size: 13px;
 }
 
+/*buttons dressed as label */
+#msform .label-checkbox {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    background:whitesmoke;
+    color: black;
+    box-sizing: border-box;
+}
+
+#msform .label-checkbox-checked {
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    background:aliceblue;
+    font-weight: bold;
+    color: black;
+    box-sizing: border-box;
+}
+
 #msform input:focus, #msform textarea:focus {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
