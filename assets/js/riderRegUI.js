@@ -5,6 +5,10 @@ $(document).ready(function(){
     var left, opacity, scale; //fieldset properties which we will animate
     var animating; //flag to prevent quick multi-click glitches
 
+    $("#uploadfilefakebutton").click(function(){
+        $("#licensefile").trigger('click');
+    });
+
     $(".next").click(function(){
         if(animating) return false;
         animating = true;
