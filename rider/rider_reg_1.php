@@ -1,3 +1,9 @@
+<?php
+
+require_once(dirname(__FILE__) . '../controller/db.php');
+session_start();
+?>
+
 <!DOCTYPE HTML>
 <html>
 
@@ -11,6 +17,17 @@
     <link rel = "stylesheet" type = "text/css" href = "../assets/css/rider-reg.css" />
 </head>
 
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
+{
+    if (isset($_POST['register'])) { //user logging in
+
+        require 'rider_reg_submit.php';
+
+    }
+
+}
+?>
 
 <body>
 
@@ -28,6 +45,7 @@
             <fieldset>
                 <h2 class="fs-title">Personal Details</h2>
                 <h3 class="fs-subtitle">Tell us about you</h3>
+                <input type="email" name="email" placeholder="Email Address (you@domain.com)"/>
                 <input type="text" name="fname" placeholder="First Name"/>
                 <input type="text" name="lname" placeholder="Last Name"/>
                 <input type="text" name="dob" placeholder="Date of Birth (DD/MM/YYYY)"/>
@@ -59,10 +77,12 @@
                 <input class="label-checkbox" id="label-ok-alcohol" type="button" value="I am ok to handle and deliver alcohol"/>
                 <input class="label-checkbox" id="label-ok-tobaco" type="button" value="I am ok to handle and deliver tobaco"/>
 
-                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-                <input type="submit" name="submit" class="submit action-button" value="Submit"/>
-                
+                <input type="password" placeholder="Enter password" id="password" name="password">
 
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="submit" name="register" class="submit action-button" value="Submit & Create Account"/>
+                
+                <!-- Ford input elements that store consent and checkbox based preferences from the above 'label-checkbox' group -->
                 <input class="checkbox-checkbox" type="checkbox" id="consent-idcheck" style="display:none;"/>
                 <input class="checkbox-checkbox" type="checkbox" id="ok-alcohol" style="display:none;"/>
                 <input class="checkbox-checkbox" type="checkbox" id="ok-tobaco" style="display:none;"/>
