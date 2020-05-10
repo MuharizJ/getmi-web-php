@@ -20,7 +20,6 @@
 		private static $debug = false;
 		private static $accessToken;
 		private static $instanceUrl;
-		private static $userDataExternalId;
 
 		public static function getInstanceUrl() {
 			if (empty(self::$instanceUrl))
@@ -50,10 +49,10 @@
 	
 		private static $authArray = array(
 			'grant_type' => 'password',
-			'client_id' => '3MVG9pcaEGrGRoTL9cD_gQF3oIwcbjjW2rMtvx8x1B9uYpg1LBeTBM3qciwPgdwYkv_PmtJevO_lHBKy2tmvQ',
-			'client_secret' => '73436AC1D057F2082BF0EDB857BB3336C114318FA3C23C94685DD55C7EB347C8',
-			'username' => 'james.layhe@butn.co.qa',
-			'password' => 'Squading@1XM0Au9ysjv8c39YXdci5ViHu'
+			'client_id' => '3MVG97quAmFZJfVyWSr.jallbUo17XgfSBuzCpemTQTYB2Pe8wo7MOwpLiurYgy27hl5HSQTaFYPc3o_LdBaD',
+			'client_secret' => '7806B8C1ADBF6FE4B2FB7B547EFFDA57E3E2AF984954D527A230ADF875AC7086',
+			'username' => 'muharizj@getmi.com.au',
+			'password' => 'Kenobi1981!8HU82Cd5Fi6aElEw9QijpliaW'
 		);
 
 		private static function send($method, $path, $jsonPost) {

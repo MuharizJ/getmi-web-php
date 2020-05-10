@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 <!-- MultiStep Form -->
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
-        <form id="msform" action="rider_reg_1.php" method="post" >
+        <form id="msform" action="rider_reg_continue.php" method="post" >
             <!-- progressbar -->
             <ul id="progressbar">
                 <li class="active">Personal Details</li>
